@@ -16,7 +16,9 @@ import AboutPage from "./AboutPage.js";
 class App extends Component {
 
 	// Selected Menu Item Selected
-	state = { activeItem: 'home' }
+	state = {
+		activeItem: 'home',
+	}
 	handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
 	// TODO: Add a spinner

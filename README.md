@@ -1,3 +1,14 @@
+To-Do's
+
+1. Home page:
+- Use Reveal component to display images
+
+2. Loaders for images and pages
+
+3. 
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

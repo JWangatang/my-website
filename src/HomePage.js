@@ -5,16 +5,39 @@ import {
 	Header,
 	//Button,
 	Icon,
-	Segment } from 'semantic-ui-react';
+	Segment,
+	Reveal,
+	Image } from 'semantic-ui-react';
 import logo from './logo.svg';
+import { _ } from 'underscore';
 
+const columns = _.times(8, i => (
+	<Grid.Column key={i} >
+		<Reveal animated='move' instant >
+			<Reveal.Content visible>
+				<Image src='https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-basketball-1.png' size='small' />
+			</Reveal.Content>
+			<Reveal.Content hidden>
+				<Image src='https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-basketball-2.png' size='small' />
+			</Reveal.Content>
+		</Reveal>
+	</Grid.Column>
+))
+
+const rows = _.times(8, i => (
+	<Grid.Row key={i}>
+		{columns}
+	</Grid.Row>
+))
 
 export default class HomePage extends Component {
+
+
 	render() {
 
 		return (
 			<div>
-				<Grid centered={true}>
+				<Grid centered={true} >
 					<Grid.Row >
 						<Header as={'h1'}>Welcome to My Incomplete React Web App</Header>
 					</Grid.Row>
@@ -35,8 +58,10 @@ export default class HomePage extends Component {
 									name={"angle double down"} />
 					</Grid.Row>
 
+					{rows}
+
 					<Grid.Row>
-						<Segment>
+						<Segment loading>
 							<img src='https://semantic-ui.com/images/wireframe/paragraph.png' alt={"Oops"}/>
 						</Segment>
 					</Grid.Row>

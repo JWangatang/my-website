@@ -9,6 +9,14 @@ import {
 	Segment } from 'semantic-ui-react';
 
 export default class AboutPage extends Component {
+
+	constructor(props) {
+		super(props)
+		this.state = {
+			loading: false,
+		}
+	}
+
 	render() {
 
 		return (
@@ -25,7 +33,7 @@ export default class AboutPage extends Component {
 
 					<Grid.Row>
 
-						<Segment>
+						<Segment loading={this.state.loading}>
 							<Header as={'h2'}>Education</Header>
 
 							I am a first generation college student at the University of Southern California.
@@ -38,7 +46,7 @@ export default class AboutPage extends Component {
 
 					<Grid.Row>
 
-						<Segment>
+						<Segment loading={this.state.loading}>
 							<Header as={'h2'}>Born and raised in San Francisco</Header>
 
 							<br/>Growing up in a dense and diverse city has helped me develop a worldly and open-minded perspective towards people and the world that we live in.
