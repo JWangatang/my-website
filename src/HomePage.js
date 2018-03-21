@@ -47,10 +47,18 @@ export default class HomePage extends Component {
 					</Grid.Row>
 
 					<Grid.Row>
-						<p>
+						<Icon name={"warning sign"} color={"yellow"}/>
+
+						<p className={"Intro-text"}>
 							If you want to see my shameful wix website that I built freshmen year,
 							peep it <a href={"http://jwang636.wixsite.com/site"}>here</a>.
 						</p>
+					</Grid.Row>
+
+					<Grid.Row>
+						<Icon name={"hourglass half"} color={"brown"}/>
+
+						<p>Cool little animation coming soon</p>
 					</Grid.Row>
 
 					<Grid.Row>
@@ -58,7 +66,7 @@ export default class HomePage extends Component {
 									name={"angle double down"} />
 					</Grid.Row>
 
-					{rows}
+					{/*rows*/}
 
 					<Grid.Row>
 						<Segment loading>

@@ -11,3 +11,7 @@
 .Down-arrow {
     animation: bounce infinite 3s ease-in-out;
 }
+
+.Intro-text {
+    font-weight: bold;
+}

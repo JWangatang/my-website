@@ -27,6 +27,15 @@ export default class AboutPage extends Component {
 					</Grid.Row>
 
 					<Grid.Row>
+						<Icon name={"warning sign"} color={"yellow"}/>
+
+						<p className={"Intro-text"}>
+							Here's an unformatted text dump from my old <a href={"http://jwang636.wixsite.com/site/about"}>about page</a>.
+							<br/> (Cool formatting coming soon)
+						</p>
+					</Grid.Row>
+
+					<Grid.Row>
 						<Icon className={"Down-arrow"}
 									name={"angle double down"} />
 					</Grid.Row>
@@ -44,6 +53,10 @@ export default class AboutPage extends Component {
 						</Segment>
 					</Grid.Row>
 
+					<Divider horizontal>
+						<Icon name={"arrow circle outline down"} color={"blue"}/>
+					</Divider>
+
 					<Grid.Row>
 
 						<Segment loading={this.state.loading}>
@@ -54,6 +67,10 @@ export default class AboutPage extends Component {
 							<br/>Missing the hills, <a href="https://about.me/karlthefog">Karl</a>, the food, and the views. But at least the beaches are nice in LA!
 						</Segment>
 					</Grid.Row>
+
+					<Divider horizontal>
+						<Icon name={"arrow circle outline down"} color={"blue"}/>
+					</Divider>
 
 					<Grid.Row>
 
@@ -68,6 +85,10 @@ export default class AboutPage extends Component {
 						</Segment>
 					</Grid.Row>
 
+					<Divider horizontal>
+						<Icon name={"arrow circle outline down"} color={"blue"}/>
+					</Divider>
+
 					<Grid.Row>
 
 						<Segment>
@@ -80,8 +101,10 @@ export default class AboutPage extends Component {
 							<br/>while also making sure we did well in school.
 							<br/>However, the amount of work and stress left damaging effects on her health and as my career develops,
 							<br/>I will do everything in my ability to take care of her and my sister.
-
-							<Divider horizontal>And</Divider>
+							<br/>
+							<br/>
+							<br/>
+							<Icon name={"plus circle"} color={"blue"}/>
 
 							<Header as={'h3'}>Educational Equity</Header>
 							My educational path was unordinary.
