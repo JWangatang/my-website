@@ -4,7 +4,8 @@ import './App.css';
 import {
 	Route,
 	NavLink,
-	HashRouter} from "react-router-dom";
+	BrowserRouter } from "react-router-dom";
+
 
 import {
 	Icon,
@@ -31,7 +32,7 @@ class App extends Component {
 		const {activeItem} = this.state
 
     return (
-    	<HashRouter>
+    	<BrowserRouter>
 				<div className="App">
 
 					{/* Top Menu Bar */}
@@ -82,7 +83,7 @@ class App extends Component {
 					<Route path="/about" component={AboutPage}/>
 
 				</div>
-			</HashRouter>
+			</BrowserRouter>
     );
   }
 }
