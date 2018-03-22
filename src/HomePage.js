@@ -69,7 +69,7 @@ export default class HomePage extends Component {
 					{/*rows*/}
 
 					<Grid.Row>
-						<Segment loading>
+						<Segment>
 							<img src='https://semantic-ui.com/images/wireframe/paragraph.png' alt={"Oops"}/>
 						</Segment>
 					</Grid.Row>
